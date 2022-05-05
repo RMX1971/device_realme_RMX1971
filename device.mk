@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+PRODUCT_TARGET_VNDK_VERSION := 29
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/realme/RMX1971/RMX1971-vendor.mk)
 
