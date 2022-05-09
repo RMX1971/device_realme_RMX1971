@@ -115,6 +115,9 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # Platform
 TARGET_BOARD_PLATFORM := sdm710
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)
+
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR := $(LOCAL_PATH)/sepolicy/private
 
