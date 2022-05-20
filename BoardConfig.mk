@@ -47,6 +47,7 @@ TARGET_ENABLE_MEDIADRM_64 := true
 
 # Display
 TARGET_SCREEN_DENSITY := 480
+TARGET_TAP_TO_WAKE_NODE := /proc/touchpanel/DouTap_enable
 
 # Extra images
 TARGET_NO_BOOTLOADER := true
