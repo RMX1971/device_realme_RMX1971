@@ -57,7 +57,11 @@ product/lib64/lib-imsvtutils.so
 product/lib64/libimscamera_jni.so
 product/lib64/libimsmedia_jni.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
--product/priv-app/ims/ims.apk
+
+# Telephony - from PNX_00WW_FIH-user
+-product/priv-app/ims/ims.apk|d2e0d617c6c8adcbcecd7d2c29d939081796b2fd
+product/priv-app/ims/lib/arm64/libimscamera_jni.so|5d4b4393e632d1256c22061fe7f64b0c53fcbd3c
+product/priv-app/ims/lib/arm64/libimsmedia_jni.so|aa16ccf7cba32d081404895a34ca8e95d87628cc
 
 # OMX
 -lib/libOmxMux.so
@@ -82,8 +86,8 @@ product/framework/QtiTelephonyServicelibrary.jar
 product/framework/qcrilhook.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
-# Telephony (qti-telephony-common)
-product/framework/qti-telephony-common.jar
+# Telephony - from PNX_00WW_FIH-user
+product/framework/qti-telephony-common.jar|fabeba9162fd802a1ba048ddbb5b3b2d23545183
 
 # WiFi Display
 bin/wfdservice
