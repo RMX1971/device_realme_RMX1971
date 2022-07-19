@@ -1,0 +1,2 @@
+# Files in rootfs
+type rootfs_file, file_type;
