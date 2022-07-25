@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_grus.mk
+    $(LOCAL_DIR)/twrp_RMX1971.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_grus-userdebug \
-    twrp_grus-eng
+    twrp_RMX1971-userdebug \
+    twrp_RMX1971-eng

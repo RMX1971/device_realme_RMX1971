@@ -13,7 +13,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-DEVICE_PATH := device/xiaomi/grus
+DEVICE_PATH := device/realme/RMX1971
 
 DISABLE_APEX_LIBS_ABSENCE_CHECK := true
 
@@ -33,7 +33,7 @@ TARGET_2ND_CPU_VARIANT := kryo385
 TARGET_SUPPORTS_64_BIT_APPS := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := grus
+TARGET_BOOTLOADER_BOARD_NAME := sdm710
 TARGET_NO_BOOTLOADER := true
 
 # Crypto
@@ -41,8 +41,7 @@ BOARD_USES_QCOM_FBE_DECRYPTION := true
 TW_INCLUDE_CRYPTO := true
 
 # Kernel
-BOARD_BOOT_HEADER_VERSION := 2
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_BOOT_HEADER_VERSION := 1
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := \
@@ -57,10 +56,9 @@ BOARD_KERNEL_CMDLINE := \
     swiotlb=1 \
     loop.max_part=7 \
     androidboot.selinux=permissive
-BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
 
