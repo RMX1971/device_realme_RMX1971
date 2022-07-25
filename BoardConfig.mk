@@ -117,10 +117,8 @@ TW_NO_EXFAT_FUSE := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi
 TW_USE_FSCRYPT_POLICY := 1
-ifeq ($(SHRP_BUILD),)
 TW_H_OFFSET := -80
 TW_Y_OFFSET := 80
-endif
 
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.hidl.allocator@1.0 \
@@ -154,5 +152,3 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/libdisplayconfig.qti.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@1.0.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so
-
--include $(DEVICE_PATH)/BoardConfigSHRP.mk
